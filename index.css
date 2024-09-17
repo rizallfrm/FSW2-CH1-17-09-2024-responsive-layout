@@ -1,0 +1,56 @@
+h1 {
+    color: limegreen;
+    font-family: "PT Serif", system-ui;
+
+}
+
+.container {
+    background-color: red;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    background-color: yellow !important;
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.hide-dekstop-only {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* TABLET VIEW */
+@media (max-width: 768px) {
+    h1 {
+        color: darkorange;
+    }
+
+    .col{
+        width: 40%;
+    }
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 500px) {
+    h1 {
+        color: blue;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
+    .col {
+        width: 100%;
+    }
+}
